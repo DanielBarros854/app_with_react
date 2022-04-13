@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import CicloDeVida from "./page/CicloDeVida";
-import Contador from "./page/Contador";
-import MyProps from "./page/Props";
+import CicloDeVida from "./components/CicloDeVida";
+// import Contador from "./components/Contador";
+// import MyProps from "./components/MyProps";
 
 class App extends Component {
   render() {
