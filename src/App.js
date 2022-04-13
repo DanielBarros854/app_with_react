@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import RenderizacaoCondicional from "./components/RenderizaçãoCondicional";
+import Lista from "./components/Lista";
+// import RenderizacaoCondicional from "./components/RenderizaçãoCondicional";
 // import Membro from "./components/Membro";
 // import CicloDeVida from "./components/CicloDeVida";
 // import Contador from "./components/Contador";
@@ -13,7 +14,8 @@ class App extends Component {
         { /* <Contador /> */}
         { /* <CicloDeVida /> */}
         { /* <Membro nome="Visitante" /> */}
-        <RenderizacaoCondicional />
+        { /* <RenderizacaoCondicional /> */}
+        <Lista />
       </div>
     )
   }
