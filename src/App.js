@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Lista from "./components/Lista";
+import Formulario from "./components/Formulatio";
+// import Lista from "./components/Lista";
 // import RenderizacaoCondicional from "./components/RenderizaçãoCondicional";
 // import Membro from "./components/Membro";
 // import CicloDeVida from "./components/CicloDeVida";
@@ -15,7 +16,8 @@ class App extends Component {
         { /* <CicloDeVida /> */}
         { /* <Membro nome="Visitante" /> */}
         { /* <RenderizacaoCondicional /> */}
-        <Lista />
+        { /* <Lista /> */}
+        <Formulario />
       </div>
     )
   }
