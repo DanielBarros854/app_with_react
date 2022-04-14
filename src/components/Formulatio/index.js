@@ -5,23 +5,19 @@ class Formulario extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      email: "",
-      password: "",
-      gender: "Male",
+      form: {
+        email: "",
+        password: "",
+        gender: "Male",
+      }
     }
-
-    this.ChangeEmail = this.ChangeEmail.bind(this);
-    this.ChangeGender = this.ChangeGender.bind(this);
+    this.HandleChangeInput = this.HandleChangeInput.bind(this)
   }
 
-  ChangeEmail(event) {
-    let inputValue = event.target.value;
-    this.setState({ email: inputValue })
-  }
-
-  ChangeGender(event) {
-    let inputValue = event.target.value;
-    this.setState({ gender: inputValue })
+  HandleChangeInput(event) {
+    let form = this.state.form;
+    form[event.target.name] = event.target.value;
+    this.setState({ form });
   }
 
   render() {
@@ -29,19 +25,21 @@ class Formulario extends Component {
       <div>
         <h1>Manipulando formulario</h1>
         Email:
-        <input type="email" name="email" value={this.state.email} onChange={this.ChangeEmail} placeholder="example@mail.com" /> <br />
+        <input type="email" name="email" value={this.state.form.email} placeholder="example@mail.com"
+          onChange={this.HandleChangeInput} /> <br />
         Senha:
-        <input type="password" name="password" value={this.state.password} placeholder="*******"
-          onChange={(event) => this.setState({ password: event.target.value })} /> <br />
+        <input type="password" name="password" value={this.state.form.password} placeholder="*******"
+          onChange={this.HandleChangeInput} /> <br />
         Sexo:
-        <select name="gender" value={this.state.gender} onChange={this.ChangeGender}>
+        <select name="gender" value={this.state.form.gender}
+          onChange={this.HandleChangeInput}>
           <option value="Male">Masculino</option>
           <option value="Female">Feminino</option>
         </select>
         <div>
-          <h3>Email: {this.state.email}</h3>
-          <h3>Password: {this.state.password}</h3>
-          <h3>Gender: {this.state.gender}</h3>
+          <h3>Email: {this.state.form.email}</h3>
+          <h3>Password: {this.state.form.password}</h3>
+          <h3>Gender: {this.state.form.gender}</h3>
         </div>
       </div>
     );
