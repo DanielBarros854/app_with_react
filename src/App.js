@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import './App.css'
-import Hooks from "./components/Hooks";
+// import RequisicaoHTTP from "./components/RequisiçãoHTTP";
+// import Hooks from "./components/Hooks";
 // import Formulario from "./components/Formulatio";
 // import Lista from "./components/Lista";
 // import RenderizacaoCondicional from "./components/RenderizaçãoCondicional";
@@ -19,9 +20,10 @@ class App extends Component {
           { /* <CicloDeVida /> */}
           { /* <Membro nome="Visitante" /> */}
           { /* <RenderizacaoCondicional /> */}
-          { /* <Lista /> */}
+          {/* <Lista /> */}
           {/* <Formulario /> */}
-          <Hooks />
+          {/* <Hooks /> */}
+          {/* <RequisicaoHTTP /> */}
         </div>
       </div>
     )
