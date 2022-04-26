@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Formulario from "./components/Formulatio";
+import './App.css'
+import Hooks from "./components/Hooks";
+// import Formulario from "./components/Formulatio";
 // import Lista from "./components/Lista";
 // import RenderizacaoCondicional from "./components/RenderizaçãoCondicional";
 // import Membro from "./components/Membro";
@@ -10,14 +12,17 @@ import Formulario from "./components/Formulatio";
 class App extends Component {
   render() {
     return (
-      <div>
-        { /* <MyProps nome="Rust" genero="Sobrevivencia"/> */}
-        { /* <Contador /> */}
-        { /* <CicloDeVida /> */}
-        { /* <Membro nome="Visitante" /> */}
-        { /* <RenderizacaoCondicional /> */}
-        { /* <Lista /> */}
-        <Formulario />
+      <div className="align-center">
+        <div>
+          { /* <MyProps nome="Rust" genero="Sobrevivencia"/> */}
+          { /* <Contador /> */}
+          { /* <CicloDeVida /> */}
+          { /* <Membro nome="Visitante" /> */}
+          { /* <RenderizacaoCondicional /> */}
+          { /* <Lista /> */}
+          {/* <Formulario /> */}
+          <Hooks />
+        </div>
       </div>
     )
   }
