@@ -1,33 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
+import { Outlet } from "react-router-dom";
 import './App.css'
-// import RequisicaoHTTP from "./components/RequisiçãoHTTP";
-// import Hooks from "./components/Hooks";
-// import Formulario from "./components/Formulatio";
-// import Lista from "./components/Lista";
-// import RenderizacaoCondicional from "./components/RenderizaçãoCondicional";
-// import Membro from "./components/Membro";
-// import CicloDeVida from "./components/CicloDeVida";
-// import Contador from "./components/Contador";
-// import MyProps from "./components/MyProps";
+import Home from "./components/Rotas/Home";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="align-center">
-        <div>
-          { /* <MyProps nome="Rust" genero="Sobrevivencia"/> */}
-          { /* <Contador /> */}
-          { /* <CicloDeVida /> */}
-          { /* <Membro nome="Visitante" /> */}
-          { /* <RenderizacaoCondicional /> */}
-          {/* <Lista /> */}
-          {/* <Formulario /> */}
-          {/* <Hooks /> */}
-          {/* <RequisicaoHTTP /> */}
-        </div>
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div className="align-center">
+      <Home />
+      <Outlet />
+    </div>
+  )
 }
 
 export default App

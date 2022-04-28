@@ -6,7 +6,6 @@ import './index.css'
 
 const RequisicaoHTTP = () => {
   const [nutri, setNutri] = useState([]);
-  console.log(nutri)
 
   useEffect(() => {
 
@@ -18,14 +17,13 @@ const RequisicaoHTTP = () => {
       setNutri(data_formated);
     };
 
-    console.log(nutri)
     loadApi();
 
   }, [nutri]);
 
   return (
     <div className="container">
-      <header>
+      <header className="header-request">
         <strong>
           React Nutri
         </strong>
