@@ -1,8 +1,6 @@
-import { render } from "react-dom";
-import Routers from "./routes";
+import App from "./App";
+import { createRoot } from 'react-dom/client';
 
-const rootElement = document.getElementById("root");
-render(
-  <Routers />,
-  rootElement
-);
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App tab="home" />);
